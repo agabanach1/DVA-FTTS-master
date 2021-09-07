@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Book a driving theory test</h1>
+      <p class="govuk-body">Book a theory test for a:</p>
+      <ul class="govuk-body">
+        <li>car</li>
+        <li>motorcycle</li>
+        <li>lorry, bus or coach</li>
+      </ul>
+      <p class="govuk-body">You can also:</p>
+      <ul class="govuk-body">
+        <li><a href="https://www.gov.uk/change-theory-test?step-by-step-nav=e01e924b-9c7c-4c71-8241-66a575c2f61f">change the time or date of a theory test</a> you've booked but haven't yet taken</li>
+        <li><a href="https://www.gov.uk/cancel-theory-test?step-by-step-nav=e01e924b-9c7c-4c71-8241-66a575c2f61f">cancel a theory test</a> you've booked but haven't yet taken</li>
+      </ul>
+      <!--<div class="govuk-inset-text">
+        <h2 class="govuk-heading-s">Have a disability or health condition? Find reading difficult?</h2>
+        <p class="govuk-body">Accessible support is available to help make your theory test more comfortable.</p>
+        <p class="govuk-body">Some types of support need time to arrange. This means you may not be able to book online now.</p>
+        <p class="govuk-body"><a href="do-you-need-support">Provide a few details to find the best available support for you</a>.</p>
+      </div>-->
+      <p class="govuk-body">This service is for England, Scotland and Wales. There's a different service to <a href="https://www.nidirect.gov.uk/services/book-change-or-cancel-your-theory-test-online">book a theory test in Northern Ireland</a>.</p>
+      <p class="govuk-body">This service is also available in Welsh (<a href="https://www.gov.uk/archebu-prawf-gyrru-theori">Cymraeg</a>)</p>
+
+
+      <a href="do-you-need-support" class="govuk-button govuk-button--start  govuk-!-margin-bottom-4  govuk-!-margin-top-2">Start now</a>
+
+      <h2 class="govuk-heading-m">Before you start</h2>
+
+      <p class="govuk-body govuk-!-font-weight-bold">You will need: </p>
+      <ul class="govuk-body">
+        <li>the UK driving licence number for the person taking the driving theory test </li>
+        <li>an email address - without one, you must book the theory test by phone</li>
+        <li>a credit or debit card to pay for the theory test</li>
+      </ul>
+
+      <h2 class="govuk-heading-m">How much theory tests cost</h2>
+
+      <table class="govuk-table">
+      <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Car</th>
+            <td class="govuk-table__cell">£23</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Motorbike</th>
+            <td class="govuk-table__cell">£23</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h2 class="govuk-heading-m">Lorry or bus</h2>
+
+      <table class="govuk-table">
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">part 1a (multiple-choice questions)</th>
+            <td class="govuk-table__cell">£26</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">part 1b (hazard perception)</th>
+            <td class="govuk-table__cell">£11</td>
+          </tr>
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">part 2 (case studies)</th>
+            <td class="govuk-table__cell">£23</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class=""govuk-body"></p>
+
+      <h2 class="govuk-heading-m">When you don't need a theory test</h2>
+      <p class="govuk-body">You don’t need to take a theory test before you book a:</p>
+      <ul class="govuk-body">
+        <li><a href="https://www.gov.uk/taxi-driver-licence">taxi driving test</a></li>
+        <li><a href="https://www.gov.uk/learning-to-drive-a-tractor-or-specialist-vehicle/driving-tests-for-tractors-and-specialist-vehicles">tractor driving test</a></li>
+      </ul>
+
+      <p class="govuk-body">You also don’t need to take a theory test if you're taking a driving test to upgrade:</p>
+      <ul class="govuk-body">
+        <li>an <a href="https://www.gov.uk/automatic-driving-licence-to-manual">automatic car licence to a manual car licence</a></li>
+        <li>from category A1 (small motorcycle) to category A2 (medium motorcycle) if you’ve had the licence for at least 2 years</li>
+        <li>from category C1 (<a href="https://www.gov.uk/driving-licence-categories#medium-sized-vehicles">medium vehicles</a>) to category C (<a href="https://www.gov.uk/driving-licence-categories#large-vehicles">large vehicles</a>) unless you got your C1 entitlement from passing a car driving test</li>
+        <li>from category D1 (minibus) to category D (bus)</li>
+        <li>any licence to be able to <a href="https://www.gov.uk/car-trailer-driving-test">tow a trailer</a></li>
+      </ul>
+
+      <h2 class="govuk-heading-m">Help with booking a test</h2>
+      <p class="govuk-body">Contact the Driver and Vehicle Standards Agency (DVA) to get help booking your theory test, or book if you don’t have an email address.</p>
+
+      <h2 class="govuk-heading-m">DVA theory test booking support</h2>
+      <div class="govuk-body">Email: <a href="mailto:customercare@pearson.com">customercare@pearson.com</a></div>
+      <div class="govuk-body">Telephone: 0300 200 1122</div>
+      <div class="govuk-body">Monday to Friday, 8am to 4pm</div>
+      <div class="govuk-body"><a href="https://www.gov.uk/call-charges">Find out about call charges</a></div>
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+
+    </div>
+</div>
+
+{% endblock %}

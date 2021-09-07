@@ -1,0 +1,26 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h1 class="govuk-panel__title">
+        Requested submitted
+      </h1>
+      <span style="font-size: 28px; font-weight: 700;">We will contact you by {{ data['how-contacted'] }} to arrange your theory test booking</span>
+      <div class="govuk-panel__body">
+        Your reference number<br><strong>HDJ2123F</strong>
+      </div>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+
+
+    </div>
+</div>
+
+{% endblock %}

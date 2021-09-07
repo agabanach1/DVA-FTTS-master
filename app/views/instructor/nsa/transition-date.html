@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row" id="date-of-booking-2">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">When do you want to take your theory test?</h1>
+      <div class="grid-row">
+        <div class="column-full">
+          <div class="form-date">
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  Why am I being asked this?
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+              The theory test booking service is being upgraded between now and September. We need you to choose a date so we can securely manage your booking during this transition period.</div>
+            </details>
+            <form action="do-you-need-support">
+            <span class="govuk-hint">
+                  For example, 12 11 2021
+                </span>
+                <div class="govuk-date-input">
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label" for="select-day">
+                        Day
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="select-day" name="select-day" type="text" value="{{ data['select-day'] }}">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label">
+                        Month
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="select-month" name="select-month" type="text"  value="{{ data['select-month'] }}">
+                    </div>
+                  </div>
+                  <div class="govuk-date-input__item">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-date-input__label">
+                        Year
+                      </label>
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="select-year" name="select-year" value="{{ data['select-year'] }}">
+                    </div>
+                  </div>
+                    <input class="form-control sm-date-picker-input" id="datepicker" name="sm-date-picker" type="text" autocomplete="off">
+                </div>
+                <a class="govuk-button" data-module="govuk-button">
+                  Continue
+                </a>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- JavaScript: jQuery UI - datepicker() -->
+
+
+{% endblock %}

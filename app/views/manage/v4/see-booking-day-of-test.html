@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage booking
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full"">
+
+      <h1 class="govuk-heading-xl">Your theory test bookings</h1>
+      <p class="govuk-body">You have <span class="govuk-!-font-weight-bold">2</span> theory tests booked.</p>
+      <p class="govuk-body">You can <a href="../../prototype-v4/which-theory-test-are-you-booking">book another theory test here</a>.</p>
+
+      <div class="theory-test">
+
+        <div class="wrapper-manage govuk-body">
+          <div class="left">
+            <div class="top">Theory test</div>
+            <div class="bottom">Car</div>
+          </div>
+          <div class="middle">
+            <div class="top"><span>Date of test</span></div>
+            <div class="bottom"><span>12:30pm, 2 December 2020</span></div>
+          </div>
+          <div class="right">
+            <div class="top"><span>Booking reference</span></div>
+            <div class="bottom"><span>B-000-000-001</span> <a class="govuk-button govuk-button--secondary" href="change-booking-v3-day-of-exam">View booking</a></div>
+
+          </div>
+        </div>
+        <div class="wrapper-manage govuk-body second-test">
+          <div class="left">
+            <div class="top">Theory test</div>
+            <div class="bottom">Car</div>
+          </div>
+          <div class="middle">
+            <div class="top"><span>Date of test</span></div>
+            <div class="bottom"><span>12:30pm, 2 December 2020</span></div>
+          </div>
+          <div class="right">
+            <div class="top"><span>Booking reference</span></div>
+            <div class="bottom"><span>B-000-000-002</span><a class="govuk-button govuk-button--secondary" href="change-booking-v3-day-of-exam">View booking</a></div>
+
+          </div>
+        </div>
+      </div>
+
+      <a href="" class="govuk-button govuk-button--secondary govuk-!-margin-right-1">
+        Previous certificates
+      </a>
+
+      <a href=""  class="govuk-button govuk-button--secondary">
+        Theory test history
+      </a>
+    </div>
+
+  </div>
+
+{% endblock %}

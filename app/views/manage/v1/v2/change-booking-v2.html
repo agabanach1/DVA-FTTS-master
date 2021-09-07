@@ -1,0 +1,130 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage booking
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">Change theory test booking</h1>
+      <p class="govuk-body">You have <span class="govuk-!-font-weight-bold">1</span> theory test booked.</p>
+
+      <div class="theory-test">
+        <div class="grid-container">
+          <div class="grid-item top-row govuk-body govuk-!-font-weight-bold">Theory tests booked</div>
+          <div class="grid-item top-row govuk-body govuk-!-font-weight-bold">Date</div>
+          <div class="grid-item top-row govuk-body govuk-!-font-weight-bold">Booking reference</div>
+          <div class="grid-item top-row govuk-body govuk-!-font-weight-bold"></div>
+          <div class="grid-item govuk-body">Car (category B)</div>
+          <div class="grid-item govuk-body">12:30pm - 2 December 2020</div>
+          <div class="grid-item govuk-body">GH9RG23UBRB32I</div>
+          <div class="grid-item govuk-body"><a href="" class="govuk-button">Change or cancel booking</a></div>
+        </div>
+
+
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Name
+            </dt>
+            <dd class="govuk-summary-list__value">
+              Sarah Philips
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Date of birth
+            </dt>
+            <dd class="govuk-summary-list__value">
+              5 January 1978
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> date of birth</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Contact information
+            </dt>
+            <dd class="govuk-summary-list__value">
+              72 Guild Street<br>London<br>SE23 6FH
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact information</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key">
+              Contact details
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <p class="govuk-body">07700 900457</p>
+              <p class="govuk-body">sarah.phillips@example.com</p>
+            </dd>
+            <dd class="govuk-summary-list__actions">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> contact details</span>
+              </a>
+            </dd>
+          </div>
+        </dl>
+
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              Test details
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <ul class="govuk-list">
+              <li>
+                <span>Name: </span><span class="govuk-!-font-weight-bold">Sarah Philips</span>
+              </li
+              <li>
+                <span>Date of birth: </span><span class="govuk-!-font-weight-bold">5 January 1978</span>
+              </li>
+              <li>
+                <span>Address: </span><span class="govuk-!-font-weight-bold">72 Guild Street, London, SE23 6FH</span>
+              </li>
+              <li>
+                <span>Test type: </span><span class="govuk-!-font-weight-bold">Car</span>
+              </li>
+              <li>
+                <span>Test location: </span><span class="govuk-!-font-weight-bold">Pearson Centre - Swansea</span>
+              </li>
+              <li>
+                <span>Support requested: </span><span class="govuk-!-font-weight-bold">Voiceover</span>
+              </li>
+            </ul>
+        </details>
+      </div>
+
+      <a href="" class="govuk-button govuk-button--secondary govuk-!-margin-right-1">
+        Previous certificates
+      </a>
+
+      <a href=""  class="govuk-button govuk-button--secondary">
+        Theory test history
+      </a>
+    </div>
+
+  </div>
+
+{% endblock %}

@@ -1,0 +1,183 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">NIDirect</h1>
+
+
+
+      <a href="vocational-v4/nsa/index" class="govuk-button govuk-!-margin-bottom-7">Booking journey</a><br>
+      <a href="instructor/index" class="govuk-button govuk-!-margin-bottom-7">Instructor journey</a><br>
+      <a href="manage/v3/index" class="govuk-button">Manage booking journey</a>
+
+      <!--<hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <hr class="govuk-section-break govuk-section-break--visible">
+
+    <div class="govuk-grid-row govuk-!-margin-top-6 govuk-!-margin-bottom-4">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h2 class="govuk-heading-m">Buttons</h2>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+        <br />
+        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+          Find address
+        </button>
+        <br />
+        <button class="govuk-button govuk-button--warning" data-module="govuk-button">
+          Delete account
+        </button>
+
+      </div>
+    </div>
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+      <h2 class="govuk-heading-m">Date</h2>
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              When was your passport issued?
+            </h1>
+          </legend>
+          <span id="passport-issued-hint" class="govuk-hint">
+            For example, 12 11 2007
+          </span>
+          <div class="govuk-date-input" id="passport-issued">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" pattern="[0-9]*" inputmode="numeric">
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        </div>
+
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+        <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Which types of waste do you transport?
+            </h1>
+          </legend>
+          <span id="waste-hint" class="govuk-hint">
+            Select all that apply.
+          </span>
+          <div class="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+              <label class="govuk-label govuk-checkboxes__label" for="waste">
+                Waste from animal carcasses
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                Waste from mines or quarries
+              </label>
+            </div>
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                Farm or agricultural waste
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+          <h1 class="govuk-fieldset__heading">
+            Have you changed your name?
+          </h1>
+        </legend>
+        <span id="changed-name-hint" class="govuk-hint">
+          This includes changing your last name or spelling your name differently.
+        </span>
+        <div class="govuk-radios govuk-radios--inline">
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="yes">
+            <label class="govuk-label govuk-radios__label" for="changed-name">
+              Yes
+            </label>
+          </div>
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="no">
+            <label class="govuk-label govuk-radios__label" for="changed-name-2">
+              No
+            </label>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="event-name">
+          What is the name of the event?
+        </label>
+
+      </h1>
+      <input class="govuk-input" id="event-name" name="event-name" type="text">
+    </div>
+
+    <a href="hand-over/index">Hand over folder</a>
+
+    <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-4">
+    <div class="govuk-form-group">
+      <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--l" for="more-detail">
+          Can you provide more detail?
+        </label>
+
+      </h1>
+      <span id="more-detail-hint" class="govuk-hint">
+        Do not include personal or financial information, like your National Insurance number or credit card details.
+      </span>
+      <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+    </div>-->
+
+    </div>
+  </div>
+
+{% endblock %}

@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage booking
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Confirm new theory test booking</h1>
+
+      <p class="govuk-body">
+
+        <dl class="govuk-summary-list">
+          <div class="govuk-summary-list__row border">
+            <dt class="govuk-summary-list__key border">
+              Test centre
+            </dt>
+            <dd class="govuk-summary-list__value border">
+              <span class="govuk-!-font-weight-bold">Pearson Professional Centre Swansea</span><br>Grove House, <br>3 Grove Pl,<br> Swansea SA1 5DF
+         
+            </dd>
+            <dd class="govuk-summary-list__actions border">
+              <a class="govuk-link" href="#">
+                Change<span class="govuk-visually-hidden"> name</span>
+              </a>
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row no-border">
+            <dt class="govuk-summary-list__key no-border">
+              Date
+            </dt>
+            <dd class="govuk-summary-list__value no-border">
+              5 January 2021
+            </dd>
+            <dd class="govuk-summary-list__actions no-border">
+
+            </dd>
+          </div>
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key no-border">
+              Time
+            </dt>
+            <dd class="govuk-summary-list__value no-border">
+              10:30 am
+            </dd>
+            <dd class="govuk-summary-list__actions no-border">
+
+            </dd>
+          </div>
+        </dl>
+
+
+      </p>
+
+      <a class="govuk-button govuk-!-margin-right-1">
+        Confirm new booking
+      </a>
+
+      <a class="govuk-button govuk-button--secondary">
+        Change something else
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}

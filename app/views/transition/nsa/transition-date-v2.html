@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row" id="date-of-booking-2">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <div class="grid-row">
+        <div class="column-full">
+          <div class="govuk-form-group">
+            <form action="">
+              <fieldset class="govuk-fieldset govuk-!-margin-bottom-5" aria-describedby="changed-name-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                  <h1 class="govuk-fieldset__heading">
+                    How soon do you want to take your theory test?
+                  </h1>
+                </legend>
+                <div id="changed-name-hint" class="govuk-hint">
+                  Select one option to check test slot availability
+                </div>
+
+                <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      Why am I being asked to do this?
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+                    The theory test booking service is being upgraded between now and September. We need you to choose an option to enable us to securely manage your booking during this transition period.</div>
+                </details>
+
+                <div class="govuk-radios govuk-radios--inline">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name" name="transition-date-check" type="radio" value="pearson">
+                    <label class="govuk-label govuk-radios__label" for="changed-name">
+                      Before 4 September 2021
+                    </label>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="changed-name-2" name="transition-date-check" type="radio" value="dvsa">
+                    <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                      On or after 4 September 2021
+                    </label>
+                  </div>
+                </div>
+
+              </fieldset>
+              <button class="govuk-button">Continue</button>
+              </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- JavaScript: jQuery UI - datepicker() -->
+
+
+{% endblock %}

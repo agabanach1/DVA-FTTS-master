@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Enter the theory test reference number</h1>
+
+      <form class="form" action="what-do-want-to-do" method="post">
+
+        <p class="govuk-body">The reference number was attached to the email sent to the email address used when making the booking.</p>
+
+        <div class="govuk-form-group">
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="event-name">
+              Enter the reference number
+            </label>
+            <input class="govuk-input" id="reference-number" name="reference-number" type="text">
+          </div>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

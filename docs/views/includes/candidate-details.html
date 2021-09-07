@@ -1,0 +1,120 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row" id="candidate-details">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Details of the person taking the theory test</h1>
+      <p>Enter the driving licence details of the person taking the test. </p>
+      <p>These details are checked and used to show information about the candidate's available tests and any test history. </p>
+      <p>It's important the information is entered exactly as it looks on the driving licence.</p>
+      <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+        <h2 class="govuk-error-summary__title" id="error-summary-title">
+          There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+
+          </ul>
+        </div>
+      </div>
+      <form action="choose-time" method="post" class="form">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            First and second names
+          </label>
+          <span class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Error message text
+          </span>
+          <input class="govuk-input" id="first-second-names" name="first-names" type="text" value="{{ data['first-names'] }}">
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                See example
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <img class="dl-exmaple" src="/public/images/item1.png" />
+            </div>
+          </details>
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            Last names
+          </label>
+          <span class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Error message text
+          </span>
+          <input class="govuk-input" id="last-names" name="last-names" type="text" value="{{ data['last-names'] }}">
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                See example
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <img  class="dl-exmaple" src="/public/images/item2.png" />
+            </div>
+          </details>
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="event-name">
+            Driving licence number
+          </label>
+          <span class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Error message text
+          </span>
+          <input class="govuk-input" id="dl-number" name="dl-number" type="text" value="{{ data['dl-number'] }}">
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                See example
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <img class="dl-exmaple" src="/public/images/item3.png" />
+            </div>
+          </details>
+        </div>
+        <div class="govuk-date-input">
+          <span class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Error message text
+          </span>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group" id="dob">
+              <label class="govuk-label govuk-date-input__label">
+                Day
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="text" value="{{ data['dob-day'] }}">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label">
+                Month
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" name="dob-month" type="text" value="{{ data['dob-month'] }}" id="dob-month">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                Year
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-4" name="dob-year" type="text" value="{{ data['dob-year'] }}" id="dob-year">
+            </div>
+          </div>
+        </div>
+        <button class="govuk-button" data-module="govuk-button">
+          Save and continue
+        </button>
+      </form>
+    </div>
+</div>
+
+{% endblock %}

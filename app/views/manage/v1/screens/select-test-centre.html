@@ -1,0 +1,44 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+<a href="#" class="govuk-back-link">Back</a>
+  <div class="govuk-grid-row screen-search-test-centres">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">
+      Select a theory test centre
+      </h1>
+      <div class="govuk-form-group grey-bounding">
+        <label class="govuk-label" for="event-name">
+          Enter a postcode or place. For example SW1A 2AA or Birmingham.
+        </label>
+        <input class="govuk-input" id="location-val" name="event-name" type="text">
+        <a class="govuk-button find-test-centre" data-module="govuk-button">
+          Find
+        </a>
+      </div>
+      <p class="govuk-body results-meta">Displaying <span class="increment govuk-!-font-weight-bold"></span> results for <span class="location-selected govuk-!-font-weight-bold"></span>. See results <a href="map" class="govuk-link">on a map</a>.</p>
+
+      <br />
+      <a class="" id="convertdistance">Show kilometers</a>
+      <div id="results"></div>
+
+      <a href="appointment" class="govuk-button" data-module="govuk-button" id="submit-location">
+        Continue
+      </a>
+    </div>
+    <br />
+  <!--  <div class="hidden-wrapper">
+      <iframe class="map" src="https://www.google.co.uk/maps/d/u/0/embed?mid=1lKoxpNyn_PE8l2MtroeYmOVfUnHpOLBh" width="100%" height="600" frameborder="0" style="border:0"></iframe>
+    </div>
+    <div class="hidden-wrapper">
+    <iframe class="map" src="https://www.google.co.uk/maps/d/u/0/embed?mid=1NOODh7V3JGNUuakDfUXmV-5NECWgJkCp" width="640" height="480"></iframe>
+    </div> -->
+</div>
+
+{% endblock %}
+    <script type='text/javascript' src='/public/javascripts/markers.js'></script>

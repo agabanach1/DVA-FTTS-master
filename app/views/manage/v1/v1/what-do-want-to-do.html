@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+
+      <form class="form" action="/url/of/next/page" method="post">
+
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+              <h1 class="govuk-fieldset__heading">
+                What do want to do?
+              </h1>
+            </legend>
+
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+                <label class="govuk-label govuk-radios__label govuk-label--s" for="sign-in">
+                Book a theory test
+                </label>
+                <span id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                  You’ll have a user ID if you’ve registered for Self Assessment or filed a tax return online before.
+                </span>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+                <label class="govuk-label govuk-radios__label govuk-label--s" for="sign-in-2">
+                  Change the booking of a theory test
+                </label>
+                <span id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                  Change the time, date, test centre or type of test
+                </span>
+              </div>
+            </div>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sign-in" name="sign-in" type="radio" value="government-gateway" aria-describedby="sign-in-item-hint">
+                <label class="govuk-label govuk-radios__label govuk-label--s" for="sign-in">
+                  Cancel a booking
+                </label>
+                <span id="sign-in-item-hint" class="govuk-hint govuk-radios__hint">
+                You must give at least 3 clear working days’ notice to get a full refund. Sundays and public holidays don’t count as working days.
+                </span>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+                <label class="govuk-label govuk-radios__label govuk-label--s" for="sign-in-2">
+                  Get a copy of a theory test certificate
+                </label>
+                <span id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                  Theory test certificates run out 2 years after the test.
+                </span>
+              </div>
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="sign-in-2" name="sign-in" type="radio" value="govuk-verify" aria-describedby="sign-in-2-item-hint">
+                <label class="govuk-label govuk-radios__label govuk-label--s" for="sign-in-2">
+                  See previous theory tests
+                </label>
+                <span id="sign-in-2-item-hint" class="govuk-hint govuk-radios__hint">
+                    See a histiry of previous theory tests booked or taken.
+                </span>
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">Continue</button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}

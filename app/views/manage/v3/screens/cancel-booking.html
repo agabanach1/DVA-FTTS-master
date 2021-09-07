@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="choose-test-centre-screen">
+          <h1 class="govuk-heading-xl">Cancel this theory test</h1>
+
+          <p class="govuk-body">Select one option. When you select ‘<span class="govuk-!-font-weight-bold">Confirm theory test cancellation</span>’ your existing booking will be permanently removed.</p>
+
+
+          <p class="govuk-body">Sundays and public holidays do not count as working days.</p>
+          <a href="confirm-cancel-booking" class="govuk-button govuk-button--warning govuk-!-margin-right-3">Confirm theory test cancellation</a>
+          <a href="../change-booking-v3" class="govuk-button govuk-button--secondary">Keep existing booking</a>
+
+          <div class="diveder"></div>
+          <h2 class="govuk-heading-m govuk-!-margin-top-5">Help with your booking</h2>
+
+          <p class="govuk-body">Contact the Driver and Vehicle Standards Agency (DVSA) to get help cancelling your theory test appointment.</p>
+
+          <h3 class="govuk-heading-s">DVSA theory test booking support</h3>
+
+          <a class="govuk-body" href="<a href="mailto:placeholder@gov.uk?subject=DVSA">placeholder@gov.uk</a>
+          <p class="govuk-body">Telephone 01234 567890</p>
+
+          <div class="govuk-inset-text">There’s a different service to cancel your theory test in Northern Ireland.</div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

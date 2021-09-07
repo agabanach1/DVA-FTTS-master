@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row" id="candidate-details">
+
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl">Enter the driving licence number of the person taking the theory test</h1>
+      <p>Enter the driving licence number of the person taking the test. </p>
+      <p>It's important the licence number is entered exactly as it looks on the driving licence.</p>
+      <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+        <h2 class="govuk-error-summary__title" id="error-summary-title">
+          There is a problem
+        </h2>
+        <div class="govuk-error-summary__body">
+          <ul class="govuk-list govuk-error-summary__list">
+
+          </ul>
+        </div>
+      </div>
+      <form action="change-booking" method="post" class="form">
+
+        <div class="govuk-form-group">
+          <label class="govuk-heading-m" for="event-name">
+            Driving licence number
+          </label>
+          <p>Enter the 16-digit driving licence number of the person taking the test.</p>
+          <span class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> Error message text
+          </span>
+          <p class="govuk-hint">See section 5 of the driving licence</p>
+          <input class="govuk-input govuk-!-margin-bottom-3" id="dl-number" name="dl-number" type="text" value="">
+          <details class="govuk-details govuk-!-margin-bottom-7" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text govuk-link">
+                See example
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              <img class="dl-exmaple" src="/public/images/item3.png" />
+            </div>
+          </details>
+        </div>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+      </form>
+    </div>
+</div>
+
+{% endblock %}

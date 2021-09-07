@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage bookings
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="../">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">Manage bookings</li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Manage bookings</h1>
+
+      <ul>
+        <li>
+          <a class="govuk-body" href="/manage/v1/booking-ref">Version 1</a>
+          <p class="govuk-body">With change your answers screen</p>
+        </li>
+        <li>
+          <a class="govuk-body" href="/manage/v2/booking-ref">Version 2</a>
+          <p class="govuk-body">With options to change without CYA pattern</p>
+        </li>
+        <li>
+          <a class="govuk-body" href="/manage/v3/candidate-details">Version 3 or manage dashboard</a>
+          <a class="govuk-body" href="/manage/v3/see-booking-day-of-test">Dashboard on day of test</a>
+          <p class="govuk-body">Displaying 2 booked tests</p>
+        </li>
+      </ul>
+
+      <ul>
+        <li><a href="screens/bsl">BSL</a></li>
+        <li><a href="screens/langauge">Language</a></li>
+        <li><a href="screens/choose-test-center">Choose test centre</a></li>
+        <li><a href="screens/select-test-center">Select test centre</a></li>
+        <li><a href="screens/appointment">Appointment</a></li>
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}

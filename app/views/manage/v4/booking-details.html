@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row" id="order-reference-number">
+
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-6">Enter the booking reference, order number or booking number</h1>
+      <p class="govkuk-body">Your booking reference, order number or booming number can be found in the email you recieved after making your booking.</p>
+      <p class="govuk-body govuk-!-margin-bottom-6">If you have not received a booking reference, contact <a href="<a href="placeholder@dvsa.gov.uk">placeholder@dvsa.gov.uk</a>.</p>
+      <form action="" method="post" class="form">
+        <label class="govuk-label" for="width-10">Enter the booking reference, order number or booking number</label>
+        <input class="govuk-input govuk-!-margin-bottom-6" id="event-name" name="event-name" type="text">
+
+        <a class="govuk-button" data-module="govuk-button">
+          Continue
+        </a>
+      </form>
+    </div>
+</div>
+
+{% endblock %}

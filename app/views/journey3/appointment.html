@@ -1,0 +1,25 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+  <a href="#" class="govuk-back-link">Back</a>
+{% block content %}
+
+
+  <div class="govuk-grid-row" id="appointment">
+    <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Choose a time for your theory test</h1>
+        <p class="govuk-body">Showing available appointments for the <span class="govuk-!-font-weight-bold"><span id="dayselected">{{ data['select-day'] }}</span> <span class="month-ready">{{ data['select-month'] }}</span> {{ data['select-year'] }}</span></p>
+        <p class="govuk-body">Select a time for your thoery test or <a href="select-date">select another date</a>
+        <div id="toggle-controls-wrapper">
+          <span class="toggle-controls govuk-body" id="left-toggle"> Day before</span>
+          <span class="toggle-controls govuk-body" id="right-toggle">Next day</span>
+        </div>
+        <div id="appointment-results">
+        </div>
+    </div>
+</div>
+
+{% endblock %}

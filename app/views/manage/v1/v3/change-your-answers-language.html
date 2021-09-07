@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row" id="checkyouranswers">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <h1 class="govuk-heading-xl">Confirm change to theory test</h1>
+
+
+
+    <dl class="govuk-summary-list grey-line govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  On-screen language
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  English / Cymraeg (Welsh)<br>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+    </dl>
+    <a href="screens/confirm-change-booking" class="govuk-button govuk-!-margin-right-1">Confirm change</a>
+    <a href="change-booking-v3" class="govuk-button govuk-button--secondary govuk-!-margin-right-1">Cancel and keep previous details</a>
+  </div>
+</div>
+{% endblock %}

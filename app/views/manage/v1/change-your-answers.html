@@ -1,0 +1,101 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  GOV.UK Prototype Kit
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row" id="checkyouranswers">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+    <h1 class="govuk-heading-xl">Change theory test booking</h1>
+
+    <h2 class="govuk-heading-m">Test details</h2>
+
+    <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+      <div class="govuk-summary-list__row no-line">
+        <dt class="govuk-summary-list__key">
+          Test time
+        </dt>
+        <dd class="govuk-summary-list__value timeslot">
+           8:00am
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="screens/004-search-for-test-centre">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row no-line">
+        <dt class="govuk-summary-list__key">
+          Date of test
+        </dt>
+        <dd class="govuk-summary-list__value">
+           2 June 2020
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Location of test
+        </dt>
+        <dd class="govuk-summary-list__value">
+           Pearson Centre - Swansea
+        </dd>
+        <dd class="govuk-summary-list__actions">
+
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Language of test
+        </dt>
+        <dd class="govuk-summary-list__value">
+           English
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="screens/langauge">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Requested British sign language
+        </dt>
+        <dd class="govuk-summary-list__value">
+           Not requested
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="screens/bsl">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+      <div class="govuk-summary-list__row">
+        <dt class="govuk-summary-list__key">
+          Voiceover
+        </dt>
+        <dd class="govuk-summary-list__value">
+           Requested
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <a class="govuk-link" href="screens/voice-over">
+            Change<span class="govuk-visually-hidden"> name</span>
+          </a>
+        </dd>
+      </div>
+    </dl>
+    <a href="screens/004-search-for-test-centre" class="govuk-button govuk-!-margin-right-1">Continue</a>
+  </div>
+</div>
+{% endblock %}

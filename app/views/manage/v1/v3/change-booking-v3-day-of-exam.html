@@ -1,0 +1,129 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Manage booking
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="/url/of/previous/page">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row manage-v3">
+    <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">View theory test booking</h1>
+    <div class="govuk-warning-text">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+        This test is today. Changes are no longer possible
+      </strong>
+    </div>
+    <div class="govuk-!-margin-bottom-7">
+      <div>
+        <div class="govuk-body ammend-actions">
+          <dl class="govuk-summary-list">
+
+            <div class="govuk-summary-list__row govuk-!-margin-bottom-1">
+              <dt class="govuk-summary-list__key">
+                Booking reference
+              </dt>
+              <dd class="govuk-summary-list__value">
+                B-000-000-001
+              </dd>
+              <dd class="govuk-summary-list__actions">
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row govuk-!-margin-bottom-1">
+              <dt class="govuk-summary-list__key">
+                Test type
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Car
+              </dd>
+              <dd class="govuk-summary-list__actions">
+              </dd>
+            </div>
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key  no-border">
+                Test time and date
+              </dt>
+              <dd class="govuk-summary-list__value timeslot  no-border">
+                 <div class="govuk-!-font-weight-bold">8:00am</div> on <div class="govuk-!-font-weight-bold">2 June 2020</div>
+              </dd>
+              <dd class="govuk-summary-list__actions  no-border">
+
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Test location
+              </dt>
+              <dd class="govuk-summary-list__value">
+                <span class="govuk-!-font-weight-bold">Pearson Professional Centre Swansea</span><br>Grove House, <br>3 Grove Pl,<br> Swansea SA1 5DF
+
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Test centre
+              </dt>
+              <dd class="govuk-summary-list__value">
+
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+
+
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Language on the screen
+              </dt>
+              <dd class="govuk-summary-list__value">
+                English<br/>
+              </dd>
+              <dd class="govuk-summary-list__actions">
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Request british sign language
+              </dt>
+              <dd class="govuk-summary-list__value">
+                English BLS
+              </dd>
+              <dd class="govuk-summary-list__actions">
+              </dd>
+            </div>
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key">
+                Voiceover
+              </dt>
+              <dd class="govuk-summary-list__value">
+                Not requested
+              </dd>
+              <dd class="govuk-summary-list__actions">
+
+              </dd>
+            </div>
+          </dl>
+
+      </div>
+
+    </div>
+  </div>
+
+  </div>
+
+{% endblock %}

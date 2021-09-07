@@ -1,0 +1,83 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          Theory test cancelled
+        </h1>
+        <div class="govuk-panel__body">
+          Your reference number<br><strong>HDJ2123F</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <p class="govuk-body">This driving theory test has been cancelled.</p>
+      <dl class="govuk-summary-list">
+
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Test type
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  Car
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                </dd>
+              </div>
+
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Test time and date
+                </dt>
+                <dd class="govuk-summary-list__value timeslot">
+                   <span class="govuk-!-font-weight-bold">8:00am</span> on <span class="govuk-!-font-weight-bold">2 June 2020</span>
+                </dd>
+                <dd class="govuk-summary-list__actions">
+                </dd>
+              </div>
+              <div class="govuk-summary-list__row">
+                <dt class="govuk-summary-list__key">
+                  Test location
+                </dt>
+                <dd class="govuk-summary-list__value">
+                  <span class="govuk-!-font-weight-bold">Pearson Professional Centre Swansea</span><br>Grove House, <br>3 Grove Pl,<br> Swansea SA1 5DF
+
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+
+
+              <div class="govuk-summary-list__row" style="display: none;">
+                <dt class="govuk-summary-list__key">
+                  Test centre
+                </dt>
+                <dd class="govuk-summary-list__value">
+
+                </dd>
+                <dd class="govuk-summary-list__actions">
+
+                </dd>
+              </div>
+
+            </dl>
+        <a href="../../../prototype-v4/which-theory-test-are-you-booking" class="govuk-button govuk-!-margin-right-3">Book a new theory test</a>
+        <a href="../see-booking" class="govuk-button govuk-button--secondary">Change another booking</a>
+    </div>
+  </div>
+
+{% endblock %}

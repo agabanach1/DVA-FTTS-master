@@ -1135,7 +1135,7 @@ li.date-btn.active {
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 body, h1, h2, h3, h4 ,h5, p, a, span, label, caption, div, li, input, .govuk-button {
   font-family: 'Lato', sans-serif !important;
-  font-size: 18px;
+ // font-size: 18px;
   line-height: 1.5;
   color: #222;
 }
@@ -1149,7 +1149,7 @@ h2 {
 }
 a {
   color: #096cb8;
-  text-decoration: none;
+  text-decoration: underline;
 }
 a:hover, a:focus {
   color: #23527c;
@@ -1442,4 +1442,16 @@ header {
   color: #fff;
   background-color: #9a161a;
   border-color: #911419;
+}
+
+.diveder {
+  border-top: 1px solid #b1b4b6;
+  width: 100%;
+  clear: both;
+  margin: 4% 0;
+}
+
+.govuk-notification-banner{
+
+
 }
